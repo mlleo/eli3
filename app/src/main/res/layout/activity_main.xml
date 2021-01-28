@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/functions"
+                android:theme="@style/SpinnerWhiteTheme"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+            </Spinner>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/relative_map"
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="350dp">
+            <ImageView
+                android:id="@+id/img_mart_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/eli3_mart_map"/>
+            <com.it_intensive.eli3.PathView
+                android:id="@+id/path_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img_icon_cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_my_location_red_24dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/btn_search"
+                android:text="Search Item"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/round_button2"/>
+            <Button
+                android:id="@+id/btn_stop"
+                android:text="Stop Navigation"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/round_button"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_debug_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_debug_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_debug_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

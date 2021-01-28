@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="functions">
+        <item>Navigation</item>
+        <item>Search Item</item>
+        <item>View Cart</item>
+    </string-array>
+</resources>

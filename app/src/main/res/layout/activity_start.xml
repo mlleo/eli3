@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityStart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:layout_marginHorizontal="40dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingRight="30sp"
+            android:src="@drawable/icon_cart"/>
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingVertical="5dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/round_button3"
+            android:textColor="#FFFFFFFF"
+
+            android:text="Start\nShopping"
+            android:textSize="24dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_change_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:paddingVertical="5dp"
+        android:text="change ip"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"/>
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+</android.support.constraint.ConstraintLayout>
